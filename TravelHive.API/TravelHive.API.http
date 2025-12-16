@@ -1,0 +1,6 @@
+@TravelHive.API_HostAddress = http://localhost:5064
+
+GET {{TravelHive.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

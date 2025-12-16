@@ -1,0 +1,11 @@
+# Ignore Frontend dependencies
+node_modules/
+dist/
+.env
+
+# Ignore Backend build files
+bin/
+obj/
+.vs/
+*.user
+appsettings.Development.json

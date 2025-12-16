@@ -1,0 +1,15 @@
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\bin\Debug\net8.0\TravelHive.Application.deps.json
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\bin\Debug\net8.0\TravelHive.Application.dll
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\bin\Debug\net8.0\TravelHive.Application.pdb
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\bin\Debug\net8.0\TravelHive.Domain.dll
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\bin\Debug\net8.0\TravelHive.Domain.pdb
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\obj\Debug\net8.0\TravelHive.Application.csproj.AssemblyReference.cache
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\obj\Debug\net8.0\TravelHive.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\obj\Debug\net8.0\TravelHive.Application.AssemblyInfoInputs.cache
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\obj\Debug\net8.0\TravelHive.Application.AssemblyInfo.cs
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\obj\Debug\net8.0\TravelHive.Application.csproj.CoreCompileInputs.cache
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\obj\Debug\net8.0\TravelHi.DD658CC7.Up2Date
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\obj\Debug\net8.0\TravelHive.Application.dll
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\obj\Debug\net8.0\refint\TravelHive.Application.dll
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\obj\Debug\net8.0\TravelHive.Application.pdb
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\obj\Debug\net8.0\ref\TravelHive.Application.dll
