@@ -1,24 +1,25 @@
 # 🏨 TravelHive - Hotel Booking Management System
 
-TravelHive is a modern, full-stack hotel booking platform built with **.NET 8** and **React**. It allows users to browse hotels, search by location, view details on a map, and book rooms. It also includes a comprehensive **Admin Panel** for managing hotels and rooms.
+**TravelHive** is a modern, full-stack hotel booking platform built to provide a seamless experience for travelers and administrators. It features a robust **.NET 8** backend and a dynamic **React** frontend, following **Clean Architecture** principles.
 
 ![Project Status](https://img.shields.io/badge/Status-Development-green)
 ![.NET](https://img.shields.io/badge/.NET-8.0-purple)
 ![React](https://img.shields.io/badge/React-18-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.0-cyan)
 
 ---
 
-## 🚀 Tech Stack (තාක්ෂණික පසුබිම)
+## 🚀 Tech Stack
 
-### **Backend (API)**
+### **Backend (Server-Side)**
 * **Framework:** ASP.NET Core Web API (.NET 8)
 * **Database:** Microsoft SQL Server (LocalDB)
-* **ORM:** Entity Framework Core (Code-First Approach)
-* **Authentication:** JWT (JSON Web Tokens) with ASP.NET Core Identity
-* **Architecture:** Clean Architecture Principles (Separation of concerns)
+* **ORM:** Entity Framework Core (Code-First)
+* **Authentication:** JWT (JSON Web Tokens) & ASP.NET Core Identity
+* **Architecture:** Clean Architecture (Separation of Concerns)
 * **Documentation:** Swagger UI
 
-### **Frontend (Client)**
+### **Frontend (Client-Side)**
 * **Framework:** React.js (Vite)
 * **Styling:** Tailwind CSS
 * **Animations:** Framer Motion
@@ -28,55 +29,39 @@ TravelHive is a modern, full-stack hotel booking platform built with **.NET 8** 
 
 ---
 
-## 🛠️ Project Features (විශේෂාංග)
+## 🛠️ Key Features
 
-### 👤 User Side (Client)
-* **Modern Hero Section:** Cinematic background with glassmorphism search bar.
-* **Search Functionality:** Filter hotels by Name or City instantly.
-* **Hotel Listing:** View featured hotels with ratings and pricing.
-* **Hotel Details:**
-    * View full description, amenities, and room availability.
-    * **Google Maps Integration:** View exact hotel location on an embedded map.
-    * **Booking Modal:** Pop-up booking form for reservations.
-* **Authentication:** User Registration and Login using JWT.
+### 👤 User Features (Public)
+* **Cinematic Hero Section:** Modern UI with a glassmorphism search bar and video/image backgrounds.
+* **Advanced Search:** Filter hotels instantly by **Name** or **City**.
+* **Interactive Maps:** View exact hotel locations via embedded **Google Maps**.
+* **Room Booking:** View room availability and book rooms via a pop-up modal.
+* **User Accounts:** Secure Registration and Login system.
 
-### 🛡️ Admin Side (Dashboard)
-* **Secure Login:** Admin authentication required to access the dashboard.
-* **Dashboard Layout:** Sidebar navigation with protected routes.
-* **Manage Hotels:**
-    * Add new hotels with images and details.
-    * View all hotels in a data table.
-    * **Edit & Delete:** Update hotel details or remove them from the system.
+### 🛡️ Admin Features (Dashboard)
+* **Admin Dashboard:** A secured area for managing the platform.
+* **Hotel Management:**
+    * **Create:** Add new hotels with images, descriptions, and ratings.
+    * **Read:** View all listed hotels in a structured table.
+    * **Update:** Edit hotel details dynamically.
+    * **Delete:** Remove hotels from the system.
+* **Room Management:** (In Progress) Add and manage rooms for specific hotels.
 
 ---
 
-## 🗄️ Database Details
+## ⚙️ Installation & Setup Guide
 
-The project uses **Microsoft SQL Server**.
-* **Database Name:** `TravelHiveDb`
-* **Connection String:** Defined in `appsettings.json`.
+Follow these steps to run the project locally.
 
-### **Main Tables:**
-1.  **AspNetUsers** - Manages User Login/Register data (Identity).
-2.  **Hotels** - Stores hotel details (Name, City, Description, ImageUrl, Rating).
-3.  **Rooms** - Stores room details linked to Hotels (Price, Type, Availability).
-
----
-
-## ⚙️ How to Run (ධාවනය කරන ආකාරය)
-
-Follow these steps to set up the project locally.
-
-### Prerequisites (අවශ්‍ය දේවල්)
+### Prerequisites
+Ensure you have the following installed:
 * [.NET 8 SDK](https://dotnet.microsoft.com/download)
-* [Node.js](https://nodejs.org/) (Latest LTS Version)
+* [Node.js](https://nodejs.org/) (Latest LTS)
 * [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) (or Visual Studio LocalDB)
-
----
 
 ### 1️⃣ Backend Setup (.NET API)
 
-1.  Navigate to the API folder:
+1.  Navigate to the API directory:
     ```bash
     cd TravelHive/TravelHive.API
     ```
@@ -84,25 +69,21 @@ Follow these steps to set up the project locally.
     ```bash
     dotnet restore
     ```
-3.  **Database Migration (Important):**
-    Since we use Code-First, you need to create the database.
+3.  **Update Database:**
+    Apply the Entity Framework migrations to create the database.
     ```bash
     dotnet ef database update --project ../TravelHive.Infrastructure --startup-project .
     ```
-    *(Or use Package Manager Console in Visual Studio: `Update-Database`)*
-
 4.  Run the API:
     ```bash
     dotnet run
     ```
-    *The API will start at: `https://localhost:7162` (or similar).*
-    *Swagger UI: `https://localhost:7162/swagger/index.html`*
+    * API URL: `https://localhost:7162`
+    * Swagger Docs: `https://localhost:7162/swagger/index.html`
 
----
+### 2️⃣ Frontend Setup (React App)
 
-### 2️⃣ Frontend Setup (React)
-
-1.  Open a new terminal and navigate to the client folder:
+1.  Open a new terminal and navigate to the client directory:
     ```bash
     cd TravelHive/client-app
     ```
@@ -110,40 +91,36 @@ Follow these steps to set up the project locally.
     ```bash
     npm install
     ```
-3.  Run the development server:
+3.  Start the development server:
     ```bash
     npm run dev
     ```
-    *The App will start at: `http://localhost:5173`*
+    * Frontend URL: `http://localhost:5173`
 
 ---
 
-## 🔑 API Endpoints (Backend විස්තර)
+## 🔑 API Endpoints
 
-### **Authentication**
-* `POST /api/Account/register` - Create a new user account.
-* `POST /api/Account/login` - Login and receive JWT Token.
-
-### **Hotels**
-* `GET /api/Hotels` - Get all hotels.
-* `GET /api/Hotels/{id}` - Get single hotel details.
-* `POST /api/Hotels` - Add a new hotel (**Requires Auth**).
-* `PUT /api/Hotels/{id}` - Update hotel details (**Requires Auth**).
-* `DELETE /api/Hotels/{id}` - Remove a hotel (**Requires Auth**).
-
-### **Rooms**
-* `GET /api/Rooms/hotel/{hotelId}` - Get rooms for a specific hotel.
-* `POST /api/Rooms` - Add a room to a hotel.
+| Method | Endpoint | Description | Auth Required |
+| :--- | :--- | :--- | :---: |
+| **POST** | `/api/Account/register` | Register a new user | ❌ |
+| **POST** | `/api/Account/login` | Login & Get JWT Token | ❌ |
+| **GET** | `/api/Hotels` | Get all hotels | ❌ |
+| **GET** | `/api/Hotels/{id}` | Get specific hotel details | ❌ |
+| **POST** | `/api/Hotels` | Add a new hotel | ✅ |
+| **PUT** | `/api/Hotels/{id}` | Update hotel details | ✅ |
+| **DELETE** | `/api/Hotels/{id}` | Delete a hotel | ✅ |
+| **GET** | `/api/Rooms/hotel/{id}` | Get rooms for a hotel | ❌ |
 
 ---
 
-## 📸 Screenshots
+## 📂 Project Structure
 
-*(You can add screenshots of your Home Page and Admin Dashboard here)*
-
----
-
-## 👨‍💻 Author
-
-Developed by **[Your Name]**
-*A Full-Stack .NET & React Project.*
+```text
+TravelHive-Project/
+├── TravelHive.sln              # Backend Solution File
+├── TravelHive.API/             # API Controllers & Setup
+├── TravelHive.Application/     # DTOs & Business Logic
+├── TravelHive.Domain/          # Entities (Hotel, Room, User)
+├── TravelHive.Infrastructure/  # Database Context & Migrations
+└── client-app/                 # React Frontend (Vite)
