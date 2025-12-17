@@ -58,6 +58,43 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TravelHive.API.Controllers.HotelsController",
+    "Method": "UpdateHotel",
+    "RelativePath": "api/Hotels/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "hotelDto",
+        "Type": "TravelHive.Application.DTOs.CreateHotelDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TravelHive.API.Controllers.HotelsController",
+    "Method": "DeleteHotel",
+    "RelativePath": "api/Hotels/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TravelHive.API.Controllers.RoomsController",
     "Method": "CreateRoom",
     "RelativePath": "api/Rooms",

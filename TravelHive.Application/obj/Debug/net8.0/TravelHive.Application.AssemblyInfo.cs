@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TravelHive.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6758c2a6522c097cd3d2de7d0635e668aebf2a70")]
 [assembly: System.Reflection.AssemblyProductAttribute("TravelHive.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TravelHive.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -54,8 +54,12 @@ builder.Services.AddCors(options =>
                .AllowAnyHeader();
     });
 });
-
-builder.Services.AddControllers();
+// Circular References (ලූප) නවත්වන්න මේ settings දාන්න ඕන
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+    });
 
 // 5. Swagger Configuration (Login Button එක Swagger එකේ පෙන්වන්න)
 builder.Services.AddEndpointsApiExplorer();

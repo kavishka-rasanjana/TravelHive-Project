@@ -17,3 +17,4 @@ C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Infrastructure\obj\Debug\n
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Infrastructure\obj\Debug\net8.0\TravelHive.Infrastructure.pdb
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Infrastructure\obj\Debug\net8.0\TravelHive.Infrastructure.genruntimeconfig.cache
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Infrastructure\obj\Debug\net8.0\ref\TravelHive.Infrastructure.dll
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Infrastructure\obj\Debug\net8.0\TravelHive.Infrastructure.sourcelink.json

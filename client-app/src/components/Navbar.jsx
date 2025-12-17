@@ -29,6 +29,10 @@ const Navbar = () => {
           {/* Login Button Section */}
 <div className="flex items-center gap-4">
     {/* Link Component එක පාවිච්චි කරන්න */}
+    
+    <Link to="/admin" className="text-sm font-medium text-gray-600 hover:text-primary mr-4">
+    Admin Panel
+</Link>
     <Link to="/login"> 
         <button className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-full hover:bg-blue-600 transition shadow-lg">
             <User size={18} />

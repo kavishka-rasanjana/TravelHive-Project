@@ -138,7 +138,6 @@ C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.API\obj\Debug\net8.0\stati
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.API\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.API\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.API\obj\Debug\net8.0\TravelHi.1A3D454E.Up2Date
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.API\obj\Debug\net8.0\TravelHive.API.dll
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.API\obj\Debug\net8.0\refint\TravelHive.API.dll
@@ -147,3 +146,5 @@ C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.API\obj\Debug\net8.0\Trave
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.API\obj\Debug\net8.0\ref\TravelHive.API.dll
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.API\obj\Debug\net8.0\TravelHive.API.sourcelink.json
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

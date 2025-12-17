@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using TravelHive.Application.DTOs;
 using TravelHive.Domain.Entities;
 using TravelHive.Infrastructure.Data;
-using TravelHive.Application.DTOs;
 
 namespace TravelHive.API.Controllers
 {
@@ -13,7 +12,6 @@ namespace TravelHive.API.Controllers
     {
         private readonly ApplicationDbContext _context;
 
-        // Constructor Injection: අපි හදපු DbContext එක මෙතනට ඉල්ලගන්නවා
         public HotelsController(ApplicationDbContext context)
         {
             _context = context;
@@ -21,11 +19,8 @@ namespace TravelHive.API.Controllers
 
         // 1. හෝටලයක් අලුතින් ඇතුලත් කිරීම (POST)
         [HttpPost]
-        // 1. හෝටලයක් අලුතින් ඇතුලත් කිරීම (POST)
-        [HttpPost]
         public async Task<IActionResult> CreateHotel(CreateHotelDto hotelDto)
         {
-            // DTO එකේ තියෙන දත්ත පාවිච්චි කරලා අලුත් Hotel Entity එකක් හදනවා (Manual Mapping)
             var hotel = new Hotel
             {
                 Name = hotelDto.Name,
@@ -46,10 +41,39 @@ namespace TravelHive.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllHotels()
         {
-            // Database එකෙන් හෝටල් ඔක්කොම ලිස්ට් එකක් විදියට ගන්නවා
             var hotels = await _context.Hotels.ToListAsync();
-
             return Ok(hotels);
+        }
+
+        // 3. හෝටලයක් යාවත්කාලීන කිරීම (UPDATE)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateHotel(int id, CreateHotelDto hotelDto)
+        {
+            var existingHotel = await _context.Hotels.FindAsync(id);
+            if (existingHotel == null) return NotFound();
+
+            existingHotel.Name = hotelDto.Name;
+            existingHotel.Description = hotelDto.Description;
+            existingHotel.Address = hotelDto.Address;
+            existingHotel.City = hotelDto.City;
+            existingHotel.ImageUrl = hotelDto.ImageUrl;
+            existingHotel.Rating = hotelDto.Rating;
+
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
+        // 4. හෝටලයක් මැකීම (DELETE)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteHotel(int id)
+        {
+            var hotel = await _context.Hotels.FindAsync(id);
+            if (hotel == null) return NotFound();
+
+            _context.Hotels.Remove(hotel);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
         }
     }
 }

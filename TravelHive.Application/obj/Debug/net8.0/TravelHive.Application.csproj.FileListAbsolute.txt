@@ -13,3 +13,4 @@ C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\obj\Debug\net8
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\obj\Debug\net8.0\refint\TravelHive.Application.dll
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\obj\Debug\net8.0\TravelHive.Application.pdb
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\obj\Debug\net8.0\ref\TravelHive.Application.dll
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Application\obj\Debug\net8.0\TravelHive.Application.sourcelink.json

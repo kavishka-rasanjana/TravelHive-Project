@@ -10,3 +10,4 @@ C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Domain\obj\Debug\net8.0\re
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Domain\obj\Debug\net8.0\TravelHive.Domain.pdb
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Domain\obj\Debug\net8.0\ref\TravelHive.Domain.dll
 C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Domain\obj\Debug\net8.0\TravelHive.Domain.csproj.AssemblyReference.cache
+C:\Users\krasa\Desktop\project1\TravelHive\TravelHive.Domain\obj\Debug\net8.0\TravelHive.Domain.sourcelink.json
